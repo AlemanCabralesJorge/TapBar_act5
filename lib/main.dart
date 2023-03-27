@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
       title: 'Pestaña TapBar',
       theme: ThemeData(
         // This is the theme of your application.
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.pink,
       ),
       home: MyHomePage(),
     );
@@ -36,11 +36,11 @@ class _MyHomePageState extends State<MyHomePage> {
           bottom: TabBar(
             indicator: BoxDecoration(
                 borderRadius: BorderRadius.circular(50), // Creates border
-                color: Colors.greenAccent),
+                color: Colors.pinkAccent),
             tabs: [
-              Tab(icon: Icon(Icons.flight)),
-              Tab(icon: Icon(Icons.directions_transit)),
-              Tab(icon: Icon(Icons.directions_car)),
+              Tab(icon: Icon(Icons.access_time)),
+              Tab(icon: Icon(Icons.account_circle_outlined)),
+              Tab(icon: Icon(Icons.add_box_sharp)),
               Tab(icon: Icon(Icons.abc)),
             ],
           ),
@@ -49,9 +49,9 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
         body: TabBarView(
           children: [
-            Icon(Icons.flight, size: 350),
-            Icon(Icons.directions_transit, size: 350),
-            Icon(Icons.directions_car, size: 350),
+            Icon(Icons.access_time, size: 350),
+            Icon(Icons.account_circle_outlined, size: 350),
+            Icon(Icons.add_box_sharp, size: 350),
             Icon(Icons.abc, size: 350),
           ],
         ),
